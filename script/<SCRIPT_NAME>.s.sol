@@ -1,0 +1,1 @@
+forge script script/<SCRIPT_NAME>.s.sol --rpc-url buildbear --private-key "0x62b99d993408ac6d1b7d4a27478dfc0c20b8bb4dc46828bcf7a9ee117550d9d0"  --etherscan-api-key "verifyContract" --verifier-url "https://rpc.buildbear.io/verify/etherscan/symbolic-ultron-f2adfa9e" -vvvv --broadcast --verify --slow
