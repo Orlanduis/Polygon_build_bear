@@ -1,0 +1,4 @@
+[rpc_endpoints]
+buildbear = "https://rpc.buildbear.io/symbolic-ultron-f2adfa9e"
+[etherscan]
+buildbear = { key = "verifyContract", url="https://rpc.buildbear.io/verify/etherscan/symbolic-ultron-f2adfa9e" }
