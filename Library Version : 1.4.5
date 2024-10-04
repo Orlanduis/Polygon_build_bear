@@ -1,0 +1,35 @@
+  const bbtestnet = {
+        id: 19908,
+        name: "symbolic-ultron-f2adfa9e",
+        network: "bbtestnet",
+        nativeCurrency: {
+          decimals: 18,
+          name: "Native Token",
+          symbol: "Native Token",
+        },
+        rpcUrls: {
+          public: { http: ["https://rpc.buildbear.io/symbolic-ultron-f2adfa9e"] },
+          default: { http: ["https://rpc.buildbear.io/symbolic-ultron-f2adfa9e"] },
+        },
+        blockExplorers: {
+          etherscan: {
+            name: "BBExplorer",
+            url: "https://explorer.buildbear.io/symbolic-ultron-f2adfa9e",
+          },
+          default: {
+            name: "BBExplorer",
+            url: "https://explorer.buildbear.io/symbolic-ultron-f2adfa9e",
+          },
+        },
+      } as const satisfies Chain;
+      
+  const { chains, publicClient, webSocketPublicClient } = configureChains(
+        [bbtestnet],
+        [
+          jsonRpcProvider({
+            rpc: (chain) => ({
+              http: "https://rpc.buildbear.io/symbolic-ultron-f2adfa9e",
+            }),
+          }),
+        ]
+      );
