@@ -1,0 +1,16 @@
+etherscan: {
+  enable: true,
+    apiKey: {
+      buildbear: "verifyContract",
+    },
+    customChains: [
+      {
+        network: "buildbear",
+        chainId: 19908,
+        urls: {
+          apiURL: "https://rpc.buildbear.io/verify/etherscan/symbolic-ultron-f2adfa9e",
+          browserURL: "https://symbolic-ultron-f2adfa9e.blockscout.buildbear.io/",
+        },
+      },
+    ],
+  }
